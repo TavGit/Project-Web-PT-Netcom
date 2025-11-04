@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT Netcom Solusi Informatika - Your Partner IT Solution</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 w-full bg-white shadow-lg z-50 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-blue-900 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-network-wired text-yellow-400 text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-blue-900">PT Netcom Solusi Informatika</h1>
+                        <p class="text-xs text-gray-600">YOUR PARTNER IT SOLUTION</p>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-6">
+                    <a href="#home" class="nav-link text-blue-900 hover:text-yellow-400 font-medium transition-colors">Home</a>
+                    <a href="#about" class="nav-link text-blue-900 hover:text-yellow-400 font-medium transition-colors">Tentang Kami</a>
+                    <a href="#profile" class="nav-link text-blue-900 hover:text-yellow-400 font-medium transition-colors">Profil Perusahaan</a>
+                    <a href="#vismis" class="nav-link text-blue-900 hover:text-yellow-400 font-medium transition-colors">Visi dan Misi</a>
+                    
+                    <!-- Dropdown More -->
+                    <div class="relative group">
+                        <button class="text-blue-900 hover:text-yellow-400 font-medium transition-colors flex items-center space-x-1">
+                            <span>Lainnya</span>
+                            <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div class="absolute top-full right-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <a href="#projects" class="block px-4 py-3 text-blue-900 hover:bg-blue-50 hover:text-yellow-400 transition-colors">Proyek & Layanan</a>
+                            <a href="#gallery" class="block px-4 py-3 text-blue-900 hover:bg-blue-50 hover:text-yellow-400 transition-colors">Galeri</a>
+                            <a href="#legal" class="block px-4 py-3 text-blue-900 hover:bg-blue-50 hover:text-yellow-400 transition-colors">Legalitas</a>
+                            <a href="#contact" class="block px-4 py-3 text-blue-900 hover:bg-blue-50 hover:text-yellow-400 transition-colors">Kontak</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Language Toggle -->
+                    <button id="langToggle" class="bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition-colors flex items-center space-x-2">
+                        <i class="fas fa-language"></i>
+                        <span id="langText">ID</span>
+                    </button>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="lg:hidden text-blue-900 text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-t">
+            <div class="container mx-auto px-4 py-4 space-y-3">
+                <a href="#home" class="block nav-link text-blue-900 hover:text-yellow-400 font-medium py-2">Home</a>
+                <a href="#about" class="block nav-link text-blue-900 hover:text-yellow-400 font-medium py-2">Tentang Kami</a>
+                <a href="#profile" class="block nav-link text-blue-900 hover:text-yellow-400 font-medium py-2">Profil Perusahaan</a>
+                <a href="#vismis" class="block nav-link text-blue-900 hover:text-yellow-400 font-medium py-2">Visi dan Misi</a>
+                <div class="border-t pt-3">
+                    <p class="text-sm font-semibold text-gray-600 mb-2">Lainnya:</p>
+                    <a href="#projects" class="block text-blue-900 hover:text-yellow-400 py-2 pl-4">Proyek & Layanan</a>
+                    <a href="#gallery" class="block text-blue-900 hover:text-yellow-400 py-2 pl-4">Galeri</a>
+                    <a href="#legal" class="block text-blue-900 hover:text-yellow-400 py-2 pl-4">Legalitas</a>
+                    <a href="#contact" class="block text-blue-900 hover:text-yellow-400 py-2 pl-4">Kontak</a>
+                </div>
+                <button id="langToggleMobile" class="w-full bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition-colors flex items-center justify-center space-x-2">
+                    <i class="fas fa-language"></i>
+                    <span id="langTextMobile">ID</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section / Home -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0" style="background-image: url(&quot;data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.4%22%3E%3Cpath%20d%3D%22M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E&quot;);"></div>
+        </div>
+        <div class="container mx-auto px-4 py-20 mt-20 text-center relative z-10">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight" data-i18n="hero.headline">
+                    MEMBERIKAN IDE, INOVASI, DAN SOLUSI IT UNTUK PERKEMBANGAN PERUSAHAAN ANDA
+                </h1>
+                <p class="text-xl md:text-2xl text-yellow-400 font-semibold mb-8" data-i18n="hero.tagline">
+                    YOUR PARTNER IT SOLUTION
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#about" class="bg-yellow-400 text-blue-900 px-8 py-4 rounded-lg font-bold hover:bg-yellow-300 transition-all transform hover:scale-105 shadow-lg">
+                        <span data-i18n="hero.cta">Pelajari Lebih Lanjut</span>
+                    </a>
+                    <a href="#contact" class="border-2 border-yellow-400 text-yellow-400 px-8 py-4 rounded-lg font-bold hover:bg-yellow-400 hover:text-blue-900 transition-all transform hover:scale-105">
+                        <span data-i18n="hero.contact">Hubungi Kami</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-yellow-400 text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-blue-900 mb-4" data-i18n="about.title">Tentang Kami</h2>
+                <div class="w-24 h-1 bg-yellow-400 mx-auto"></div>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl p-8 md:p-12 shadow-lg mb-6">
+                    <p class="text-gray-700 text-lg leading-relaxed mb-6" data-i18n="about.p1">
+                        PT Netcom Solusi Informatika adalah Perusahaan Profesional yang memberikan jasa layanan Solusi IT untuk Perkantoran maupun Perorangan. Pengguna layanan kami tersebar di berbagai industri seperti Manufaktur, Otomotif, Logistik, Perbankan, Perhotelan, Farmasi, Kontruksi, Rumah Sakit, Pendidikan dan Industri lainnya.
+                    </p>
+                    <p class="text-gray-700 text-lg leading-relaxed" data-i18n="about.p2">
+                        Perusahaan kami melayani infrastruktur jaringan intranet Perusahaan seperti Jaringan LAN, Router, Switch, Acces Point, PABX, Setting Mikrotik dan menangani jasa pusat data perusahaan seperti pembangunan server, perapihan server dan maintenance server, serta penjualan PC/Laptop untuk kebutuhan perkantoran maupun kebutuhan Security CCTV. Internet Service Provider (ISP).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-blue-900 mb-4" data-i18n="profile.title">Profil Perusahaan</h2>
+                <div class="w-24 h-1 bg-yellow-400 mx-auto"></div>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-blue-900 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-building text-yellow-400 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-blue-900" data-i18n="profile.company">Nama Perusahaan</h3>
+                        </div>
+                        <p class="text-gray-700 text-lg" data-i18n="profile.companyName">PT Netcom Solusi Informatika</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-blue-900 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-bullhorn text-yellow-400 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-blue-900" data-i18n="profile.motto">Moto</h3>
+                        </div>
+                        <p class="text-gray-700 text-lg font-semibold" data-i18n="profile.mottoText">YOUR PARTNER IT SOLUTION</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-blue-900 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-industry text-yellow-400 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-blue-900" data-i18n="profile.industry">Industri</h3>
+                        </div>
+                        <p class="text-gray-700 text-lg" data-i18n="profile.industryText">Teknologi Informasi & Solusi IT</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-blue-900 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-users text-yellow-400 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-blue-900" data-i18n="profile.clients">Klien</h3>
+                        </div>
+                        <p class="text-gray-700 text-lg" data-i18n="profile.clientsText">Berbagai industri: Manufaktur, Otomotif, Logistik, Perbankan, Perhotelan, Farmasi, Konstruksi, Rumah Sakit, Pendidikan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section id="vismis" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-blue-900 mb-4" data-i18n="vismis.title">Visi dan Misi</h2>
+                <div class="w-24 h-1 bg-yellow-400 mx-auto"></div>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gradient-to-br from-blue-900 to-blue-800 rounded-xl p-8 text-white shadow-xl">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-yellow-400 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-eye text-blue-900 text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold" data-i18n="vismis.vision">Visi</h3>
+                        </div>
+                        <p class="text-lg leading-relaxed" data-i18n="vismis.visionText">
+                            Menjadi perusahaan solusi IT terdepan yang memberikan inovasi dan layanan berkualitas tinggi untuk mendukung perkembangan bisnis klien kami.
+                        </p>
+                    </div>
+                    <div class="bg-gradient-to-br from-yellow-400 to-yellow-300 rounded-xl p-8 text-blue-900 shadow-xl">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-blue-900 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-bullseye text-yellow-400 text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold" data-i18n="vismis.mission">Misi</h3>
+                        </div>
+                        <ul class="text-lg leading-relaxed space-y-3" data-i18n="vismis.missionText">
+                            <li>• Memberikan solusi IT yang inovatif dan terpercaya</li>
+                            <li>• Melayani dengan profesionalisme dan integritas tinggi</li>
+                            <li>• Membangun kemitraan jangka panjang dengan klien</li>
+                            <li>• Terus berinovasi dalam teknologi dan layanan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects & Services Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-blue-900 mb-4" data-i18n="projects.title">Proyek & Layanan</h2>
+                <div class="w-24 h-1 bg-yellow-400 mx-auto mb-4"></div>
+                <p class="text-gray-600 text-lg" data-i18n="projects.subtitle">Solusi IT Lengkap untuk Kebutuhan Bisnis Anda</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <!-- Service Card 1 -->
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-blue-900">
+                    <div class="w-16 h-16 bg-blue-900 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-server text-yellow-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3" data-i18n="projects.service1.title">Pengadaan dan Jasa Service Perangkat IT</h3>
+                    <p class="text-gray-600" data-i18n="projects.service1.desc">Hardware and Software untuk kebutuhan perkantoran dan industri</p>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-blue-900">
+                    <div class="w-16 h-16 bg-blue-900 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-video text-yellow-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3" data-i18n="projects.service2.title">Pengadaan dan Instalasi CCTV</h3>
+                    <p class="text-gray-600" data-i18n="projects.service2.desc">Closed Circuit Television untuk keamanan dan monitoring</p>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-blue-900">
+                    <div class="w-16 h-16 bg-blue-900 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-phone-alt text-yellow-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3" data-i18n="projects.service3.title">Pengadaan dan Instalasi PABX</h3>
+                    <p class="text-gray-600" data-i18n="projects.service3.desc">Private Automatic Branch Exchange untuk komunikasi internal</p>
+                </div>
+                
+                <!-- Service Card 4 -->
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-blue-900">
+                    <div class="w-16 h-16 bg-blue-900 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-wifi text-yellow-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3" data-i18n="projects.service4.title">Internet Service Provider (ISP)</h3>
+                    <p class="text-gray-600" data-i18n="projects.service4.desc">Pengadaan dan Instalasi Internet untuk kebutuhan bisnis</p>
+                </div>
+                
+                <!-- Service Card 5 -->
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-blue-900">
+                    <div class="w-16 h-16 bg-blue-900 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-network-wired text-yellow-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3" data-i18n="projects.service5.title">Instalasi Jaringan LAN</h3>
+                    <p class="text-gray-600" data-i18n="projects.service5.desc">Local Area Network dengan Router, Switch, Access Point, dan Mikrotik</p>
+                </div>
+                
+                <!-- Service Card 6 -->
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-blue-900">
+                    <div class="w-16 h-16 bg-blue-900 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-satellite text-yellow-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3" data-i18n="projects.service6.title">IPTV & VSAT STARLINK</h3>
+                    <p class="text-gray-600" data-i18n="projects.service6.desc">IPTV PREMIUM-HOMETV dan VSAT STARLINK-BKU untuk solusi komunikasi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-blue-900 mb-4" data-i18n="gallery.title">Galeri</h2>
+                <div class="w-24 h-1 bg-yellow-400 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <!-- Placeholder Gallery Items -->
+                <div class="bg-gradient-to-br from-blue-900 to-blue-800 rounded-xl h-64 flex items-center justify-center shadow-lg">
+                    <i class="fas fa-image text-yellow-400 text-5xl opacity-50"></i>
+                </div>
+                <div class="bg-gradient-to-br from-yellow-400 to-yellow-300 rounded-xl h-64 flex items-center justify-center shadow-lg">
+                    <i class="fas fa-image text-blue-900 text-5xl opacity-50"></i>
+                </div>
+                <div class="bg-gradient-to-br from-blue-900 to-blue-800 rounded-xl h-64 flex items-center justify-center shadow-lg">
+                    <i class="fas fa-image text-yellow-400 text-5xl opacity-50"></i>
+                </div>
+                <div class="bg-gradient-to-br from-yellow-400 to-yellow-300 rounded-xl h-64 flex items-center justify-center shadow-lg">
+                    <i class="fas fa-image text-blue-900 text-5xl opacity-50"></i>
+                </div>
+                <div class="bg-gradient-to-br from-blue-900 to-blue-800 rounded-xl h-64 flex items-center justify-center shadow-lg">
+                    <i class="fas fa-image text-yellow-400 text-5xl opacity-50"></i>
+                </div>
+                <div class="bg-gradient-to-br from-yellow-400 to-yellow-300 rounded-xl h-64 flex items-center justify-center shadow-lg">
+                    <i class="fas fa-image text-blue-900 text-5xl opacity-50"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legal Section -->
+    <section id="legal" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-blue-900 mb-4" data-i18n="legal.title">Legalitas</h2>
+                <div class="w-24 h-1 bg-yellow-400 mx-auto"></div>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white rounded-xl p-8 shadow-lg border-l-4 border-blue-900">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-blue-900 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-file-contract text-yellow-400 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-blue-900" data-i18n="legal.doc1.title">Akta Pendirian Perusahaan</h3>
+                        </div>
+                        <p class="text-gray-700" data-i18n="legal.doc1.number">NOMOR AHU-0055352.AH.02.01 TAHUN 2023</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-8 shadow-lg border-l-4 border-yellow-400">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-yellow-400 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-certificate text-blue-900 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-blue-900" data-i18n="legal.doc2.title">Izin Usaha (NIB) / NPWP</h3>
+                        </div>
+                        <p class="text-gray-700" data-i18n="legal.doc2.number">39.801.195.7-404.000 (KPP PRATAMA BOGOR)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-blue-900 mb-4" data-i18n="contact.title">Kontak Kami</h2>
+                <div class="w-24 h-1 bg-yellow-400 mx-auto"></div>
+            </div>
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Contact Information -->
+                    <div class="bg-gradient-to-br from-blue-900 to-blue-800 rounded-xl p-8 text-white shadow-xl">
+                        <h3 class="text-2xl font-bold mb-6" data-i18n="contact.info.title">Informasi Kontak</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-yellow-400 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-building text-blue-900"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1" data-i18n="contact.info.address">Alamat</h4>
+                                    <p class="text-gray-200" data-i18n="contact.info.addressText">Jl. Raya Bogor, Jakarta</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-yellow-400 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-envelope text-blue-900"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1" data-i18n="contact.info.email">Email</h4>
+                                    <p class="text-gray-200">sales@netcom.co.id</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-yellow-400 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-phone text-blue-900"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1" data-i18n="contact.info.phone">Telepon</h4>
+                                    <p class="text-gray-200" data-i18n="contact.info.phoneText">+62 XXX-XXXX-XXXX</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-yellow-400 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-clock text-blue-900"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1" data-i18n="contact.info.hours">Jam Operasional</h4>
+                                    <p class="text-gray-200" data-i18n="contact.info.hoursText">Senin - Jumat: 09:00 - 17:00 WIB</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div class="bg-gray-50 rounded-xl p-8 shadow-xl">
+                        <h3 class="text-2xl font-bold text-blue-900 mb-6" data-i18n="contact.form.title">Kirim Pesan</h3>
+                        <form id="contactForm" class="space-y-4">
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2" data-i18n="contact.form.name">Nama Lengkap</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-900 focus:border-transparent" placeholder="Nama Lengkap">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2" data-i18n="contact.form.email">Email</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-900 focus:border-transparent" placeholder="email@example.com">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2" data-i18n="contact.form.message">Pesan</label>
+                                <textarea id="message" name="message" required rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-900 focus:border-transparent" placeholder="Tulis pesan Anda di sini..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-900 text-white py-3 rounded-lg font-bold hover:bg-blue-800 transition-colors flex items-center justify-center space-x-2">
+                                <span data-i18n="contact.form.submit">Kirim Pesan</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                        
+                        <!-- Translation Demo Result -->
+                        <div id="translationResult" class="hidden mt-6 p-4 bg-yellow-400 rounded-lg">
+                            <h4 class="font-bold text-blue-900 mb-2" data-i18n="contact.form.translationTitle">Terjemahan Pesan:</h4>
+                            <p id="translatedMessage" class="text-blue-900"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-yellow-400">PT Netcom Solusi Informatika</h3>
+                    <p class="text-gray-300 mb-2" data-i18n="footer.tagline">YOUR PARTNER IT SOLUTION</p>
+                    <p class="text-gray-400 text-sm" data-i18n="footer.description">Solusi IT profesional untuk perkembangan bisnis Anda</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-yellow-400" data-i18n="footer.quickLinks">Tautan Cepat</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-300 hover:text-yellow-400 transition-colors" data-i18n="footer.home">Home</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-yellow-400 transition-colors" data-i18n="footer.about">Tentang Kami</a></li>
+                        <li><a href="#projects" class="text-gray-300 hover:text-yellow-400 transition-colors" data-i18n="footer.services">Layanan</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-yellow-400 transition-colors" data-i18n="footer.contact">Kontak</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-yellow-400" data-i18n="footer.contact">Kontak</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><i class="fas fa-envelope mr-2"></i> sales@netcom.co.id</li>
+                        <li><i class="fas fa-phone mr-2"></i> <span data-i18n="footer.phone">+62 XXX-XXXX-XXXX</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 pt-8 text-center text-gray-400">
+                <p data-i18n="footer.copyright">&copy; 2024 PT Netcom Solusi Informatika. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
