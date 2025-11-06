@@ -7,9 +7,10 @@ const translations = {
         'nav.profile': 'Profil Perusahaan',
         'nav.vismis': 'Visi dan Misi',
         'nav.more': 'Lainnya',
-        'nav.projects': 'Proyek & Layanan',
+        'nav.projects': 'Produk & Layanan',
         'nav.gallery': 'Galeri',
         'nav.legal': 'Legalitas',
+        'nav.news': 'Berita',
         'nav.contact': 'Kontak',
         
         // Hero
@@ -42,7 +43,7 @@ const translations = {
         'vismis.missionText': '• Memberikan solusi IT yang inovatif dan terpercaya\n• Melayani dengan profesionalisme dan integritas tinggi\n• Membangun kemitraan jangka panjang dengan klien\n• Terus berinovasi dalam teknologi dan layanan',
         
         // Projects
-        'projects.title': 'Proyek & Layanan',
+        'projects.title': 'Produk & Layanan',
         'projects.subtitle': 'Solusi IT Lengkap untuk Kebutuhan Bisnis Anda',
         'projects.service1.title': 'Pengadaan dan Jasa Service Perangkat IT',
         'projects.service1.desc': 'Hardware and Software untuk kebutuhan perkantoran dan industri',
@@ -67,11 +68,25 @@ const translations = {
         'legal.doc2.title': 'Izin Usaha (NIB) / NPWP',
         'legal.doc2.number': '39.801.195.7-404.000 (KPP PRATAMA BOGOR)',
         
+        // News
+        'news.title': 'Berita Terbaru',
+        'news.subtitle': 'Ikuti perkembangan terbaru seputar teknologi dan solusi IT',
+        'news.item1.date': '15 Maret 2024',
+        'news.item1.title': 'Inovasi Terbaru dalam Jaringan Perusahaan',
+        'news.item1.excerpt': 'Temukan solusi jaringan terbaru yang dapat meningkatkan efisiensi dan keamanan sistem IT perusahaan Anda.',
+        'news.item2.date': '10 Maret 2024',
+        'news.item2.title': 'Pentingnya Keamanan Data di Era Digital',
+        'news.item2.excerpt': 'Pelajari strategi terbaik untuk melindungi data perusahaan dari ancaman siber yang semakin canggih.',
+        'news.item3.date': '5 Maret 2024',
+        'news.item3.title': 'Solusi Cloud untuk Bisnis Modern',
+        'news.item3.excerpt': 'Manfaatkan teknologi cloud computing untuk meningkatkan fleksibilitas dan skalabilitas operasional bisnis.',
+        'news.readmore': 'Baca Selengkapnya',
+        
         // Contact
         'contact.title': 'Kontak Kami',
         'contact.info.title': 'Informasi Kontak',
         'contact.info.address': 'Alamat',
-        'contact.info.addressText': 'Jl. Raya Bogor, Jakarta',
+        'contact.info.addressText': 'JL. KH SHOLEH ISKANDAR, PERUM BOGOR RAYA PERMAI, BLOK FM4 NO.8',
         'contact.info.email': 'Email',
         'contact.info.phone': 'Telepon',
         'contact.info.phoneText': '+62 XXX-XXXX-XXXX',
@@ -88,12 +103,19 @@ const translations = {
         'footer.tagline': 'YOUR PARTNER IT SOLUTION',
         'footer.description': 'Solusi IT profesional untuk perkembangan bisnis Anda',
         'footer.quickLinks': 'Tautan Cepat',
+        'footer.moreLinks': 'Lainnya',
         'footer.home': 'Home',
         'footer.about': 'Tentang Kami',
-        'footer.services': 'Layanan',
+        'footer.profile': 'Profil Perusahaan',
+        'footer.vismis': 'Visi & Misi',
+        'footer.projects': 'Produk & Layanan',
+        'footer.gallery': 'Galeri',
+        'footer.legal': 'Legalitas',
+        'footer.news': 'Berita',
         'footer.contact': 'Kontak',
         'footer.phone': '+62 XXX-XXXX-XXXX',
-        'footer.copyright': '© 2024 PT Netcom Solusi Informatika. All rights reserved.'
+        'footer.hours': 'Senin - Jumat: 09:00 - 17:00',
+        'footer.address': 'JL. KH SHOLEH ISKANDAR, PERUM BOGOR RAYA PERMAI, BLOK FM4 NO.8',
     },
     en: {
         // Navigation
@@ -102,9 +124,10 @@ const translations = {
         'nav.profile': 'Company Profile',
         'nav.vismis': 'Vision & Mission',
         'nav.more': 'More',
-        'nav.projects': 'Projects & Services',
+        'nav.projects': 'Products & Services',
         'nav.gallery': 'Gallery',
         'nav.legal': 'Legality',
+        'nav.news': 'News',
         'nav.contact': 'Contact',
         
         // Hero
@@ -137,7 +160,7 @@ const translations = {
         'vismis.missionText': '• Provide innovative and trusted IT solutions\n• Serve with high professionalism and integrity\n• Build long-term partnerships with clients\n• Continue to innovate in technology and services',
         
         // Projects
-        'projects.title': 'Projects & Services',
+        'projects.title': 'Products & Services',
         'projects.subtitle': 'Complete IT Solutions for Your Business Needs',
         'projects.service1.title': 'Procurement and IT Equipment Service',
         'projects.service1.desc': 'Hardware and Software for office and industrial needs',
@@ -162,11 +185,24 @@ const translations = {
         'legal.doc2.title': 'Business License (NIB) / NPWP',
         'legal.doc2.number': '39.801.195.7-404.000 (KPP PRATAMA BOGOR)',
         
+        // News
+        'news.title': 'Latest News',
+        'news.subtitle': 'Follow the latest developments in technology and IT solutions',
+        'news.item1.date': 'March 15, 2024',
+        'news.item1.title': 'Latest Innovations in Corporate Networks',
+        'news.item1.excerpt': 'Discover the latest network solutions that can improve the efficiency and security of your company\'s IT systems.',
+        'news.item2.date': 'March 10, 2024',
+        'news.item2.title': 'The Importance of Data Security in the Digital Era',
+        'news.item2.excerpt': 'Learn the best strategies to protect company data from increasingly sophisticated cyber threats.',
+        'news.item3.date': 'March 5, 2024',
+        'news.item3.title': 'Cloud Solutions for Modern Business',
+        'news.item3.excerpt': 'Leverage cloud computing technology to increase the flexibility and scalability of business operations.',
+        'news.readmore': 'Read More',
+        
         // Contact
         'contact.title': 'Contact Us',
         'contact.info.title': 'Contact Information',
         'contact.info.address': 'Address',
-        'contact.info.addressText': 'Jl. Raya Bogor, Jakarta',
         'contact.info.email': 'Email',
         'contact.info.phone': 'Phone',
         'contact.info.phoneText': '+62 XXX-XXXX-XXXX',
@@ -183,12 +219,18 @@ const translations = {
         'footer.tagline': 'YOUR PARTNER IT SOLUTION',
         'footer.description': 'Professional IT solutions for your business development',
         'footer.quickLinks': 'Quick Links',
+        'footer.moreLinks': 'More',
         'footer.home': 'Home',
         'footer.about': 'About Us',
-        'footer.services': 'Services',
+        'footer.profile': 'Company Profile',
+        'footer.vismis': 'Vision & Mission',
+        'footer.projects': 'Products & Services',
+        'footer.gallery': 'Gallery',
+        'footer.legal': 'Legality',
+        'footer.news': 'News',
         'footer.contact': 'Contact',
         'footer.phone': '+62 XXX-XXXX-XXXX',
-        'footer.copyright': '© 2024 PT Netcom Solusi Informatika. All rights reserved.'
+        'footer.hours': 'Monday - Friday: 09:00 - 17:00',
     }
 };
 
@@ -254,6 +296,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
+            // Show the target section if it's hidden
+            if (['gallery', 'legal', 'news'].includes(target.id)) {
+                target.style.display = 'block';
+            }
+            
             const offsetTop = target.offsetTop - 80;
             window.scrollTo({
                 top: offsetTop,
@@ -408,4 +455,3 @@ document.addEventListener('DOMContentLoaded', () => {
     translatePage('id'); // Set default language to Indonesian
     updateActiveNav();
 });
-

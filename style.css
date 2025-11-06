@@ -115,3 +115,7 @@ textarea:focus {
     }
 }
 
+/* Hide sections that should not be visible initially */
+#gallery, #legal, #news {
+    display: none;
+}
